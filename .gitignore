@@ -212,3 +212,5 @@ __marimo__/
 .claude
 
 .myvenv
+*.mp3
+*.mp4

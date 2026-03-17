@@ -14,8 +14,9 @@ class VideoDownloader:
         project_dir = Path(self.path)
         os.chdir(project_dir)
 
-        self.do_run()
+        video_path = self.do_run()
         print("Download complete!")
+        return video_path
 
     @abstractmethod
     def do_run(self):
