@@ -1,6 +1,7 @@
 import yt_dlp
 
-from video_downloader import VideoDownloader
+from audio.video_downloader import VideoDownloader
+
 
 
 class YouTubeDownloader(VideoDownloader):
