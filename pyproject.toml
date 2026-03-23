@@ -13,7 +13,11 @@ dependencies = [
     "faster-whisper",
     "moviepy",
     "moondream",
-    "opencv-python"
+    "opencv-python",
+    "torch>=2.1.0",
+    "transformers>=4.44.0",
+    "accelerate>=0.25.0",
+    "tqdm>=4.66.0"
 ]
 
 [project.optional-dependencies]
