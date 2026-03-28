@@ -1,7 +1,7 @@
 import os
 from platform import processor
-from tkinter import Image
 from transformers import BlipForConditionalGeneration, BlipProcessor
+from PIL import Image
 
 
 class FrameToCaption:
@@ -12,10 +12,10 @@ class FrameToCaption:
     def caption_image(self, path):
         image = Image.open(path).convert("RGB")
 
-        inputs = processor(images=image, return_tensors="pt")
+        inputs = self.processor(images=image, return_tensors="pt")
         output = self.model.generate(**inputs)
 
-        caption = processor.decode(output[0], skip_special_tokens=True)
+        caption = self.processor.decode(output[0], skip_special_tokens=True)
         return caption
 
 
