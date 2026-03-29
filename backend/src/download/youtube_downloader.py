@@ -1,6 +1,6 @@
 import yt_dlp
 
-from audio.video_downloader import VideoDownloader
+from src.audio.video_downloader import VideoDownloader
 
 
 

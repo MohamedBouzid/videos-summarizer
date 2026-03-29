@@ -18,7 +18,9 @@ dependencies = [
     "transformers>=4.44.0",
     "accelerate>=0.25.0",
     "tqdm>=4.66.0",
-    "ollama"
+    "ollama",
+    "flask",
+    "flask-cors"
 ]
 
 [project.optional-dependencies]
