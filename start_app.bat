@@ -1,7 +1,7 @@
 @echo off
 echo Starting Video Summarizer Application...
 echo.
-
+start /B ollama serve
 echo Starting Python Backend...
 start "Video Summarizer Backend" cmd /k "cd backend && python api.py"
 
